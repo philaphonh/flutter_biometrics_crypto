@@ -1,16 +1,9 @@
+plugins {
+    id 'com.android.library'
+}
+
 group 'com.travelunion.flutter_biometrics'
 version '1.0-SNAPSHOT'
-
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.2'
-    }
-}
 
 rootProject.allprojects {
     repositories {
@@ -19,10 +12,9 @@ rootProject.allprojects {
     }
 }
 
-apply plugin: 'com.android.library'
-
 android {
-    compileSdkVersion 30
+    namespace 'com.travelunion.flutter_biometrics'
+    compileSdkVersion 35
 
     defaultConfig {
         minSdkVersion 23
