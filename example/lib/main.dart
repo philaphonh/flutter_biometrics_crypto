@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
 
       if (!mounted) return;
     } catch (e) {
-      print("error -----> ${e.code}");
+      print("error -----> ${e}");
     }
   }
 
@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> {
             Container(
               alignment: Alignment.center,
               margin: EdgeInsets.only(top: 20.0),
-              child: RaisedButton(
+              child: ElevatedButton(
                 onPressed: createKeys,
                 child: Text("Create keys"),
               ),
@@ -125,7 +125,7 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
             Center(
-              child: RaisedButton(
+              child: ElevatedButton(
                 onPressed: sign,
                 child: Text("Sign '$_payload'"),
               ),
