@@ -7,3 +7,4 @@
 build/
 .gradle/
 .idea/
+.flutter-plugins-dependencies
